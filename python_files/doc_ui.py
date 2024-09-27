@@ -84,7 +84,7 @@ async def respond(message, chat_history):
         # Include the content of each document in the context
         context_text = "\n\n".join([
             f"{doc.metadata['source']} (Page {doc.metadata.get('page', 'N/A')}):\n{doc.page_content}" 
-            for doc in context
+            for doc in context if 'source' in doc.metadata
         ])
         logging.debug(f"Formatted context with content: {context_text}")
 

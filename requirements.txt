@@ -7,7 +7,6 @@ pydantic==2.9.1
 olefile==0.47
 unstructured==0.15.12
 unstructured[pdf]
-python-magic-bin==0.4.14
 pdfplumber==0.11.4
 
 # Azure SDKs
@@ -22,6 +21,7 @@ langchain==0.2.16
 langchain-community==0.2.15
 langchain-core==0.2.40
 langchain-openai==0.1.24
+openai==1.47.0
 
 # Other dependencies
 tqdm==4.66.5
@@ -36,3 +36,4 @@ azure-cognitiveservices-speech==1.40.0
 
 # For handling environments
 python-dotenv==1.0.1
+
